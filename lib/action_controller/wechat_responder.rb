@@ -48,12 +48,12 @@ module ActionController
     end
   end
 
-  if defined? Base
-    class << Base
+  if defined? API
+    class << API
       include WechatResponder
     end
-  elsif defined? API
-    class << API
+  elsif defined? Base
+    class << Base
       include WechatResponder
     end
   end
